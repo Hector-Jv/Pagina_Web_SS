@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de ejemplo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dr. Jesús Alberto Martínez Castro</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./views/alumnos/alumnos.html">Alumnos</a></li>
+                <li><a href="./views/investigacion/investigacion.html">Temas de investigación</a></li>
+                <li><a href="./views/interes/interes.html">Temas de interés</a></li>
+            </ul>
+        </nav>
+        <button id="menu-btn" onclick="toggleMenu()">Menú</button>
+    </header>
+
+    <div id="overlay" onclick="toggleMenu()"></div>
+    <button id="close-btn" onclick="toggleMenu()">X</button>
+
+    <section class="imagen-institucion">
+        <img src="./img/principal.jpg" alt="Imagen de la institución">
+        <div class="texto-sobre-imagen">Centro de Investigación en Computación</div>
+    </section>
+
+    <section class="cards">
+        <h2>Investigador SNI nivel 1</h2>
+        <div class="cards-container">
+            
+            <div class="card" onmouseenter="mostrarInfo(this)" onmouseleave="ocultarInfo(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./img/alumnos.jpg" alt="Imagen de la card">
+                        <h3>Alumnos</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Alumnos</h3>
+                        <p>Trabajos realizados por los alumnos.</p>
+                        <a href="./views/alumnos/alumnos.html">Ir a la sección</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin del bloque card -->
+            <div class="card" onmouseenter="mostrarInfo(this)" onmouseleave="ocultarInfo(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./img/bit_cuantico.png" alt="Imagen de la card">
+                        <h3>Líneas de investigación</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Temas de investigación</h3>
+                        <p>Investigaciones sobre cómputo cuántico, probabilidad, machine learning, etc.</p>
+                        <a href="#">Ir a la sección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onmouseenter="mostrarInfo(this)" onmouseleave="ocultarInfo(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./img/enlace.jpg" alt="Imagen de la card">
+                        <h3>Temas de interés</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Temas de interés</h3>
+                        <p>Noticias, publicaciones, etc.</p>
+                        <a href="./views/interes/interes.html">Ir a la sección</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 - Derechos reservados
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

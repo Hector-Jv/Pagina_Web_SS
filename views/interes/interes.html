@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de ejemplo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./interes.css">
+</head>
+<body>
+    <header>
+        <h1>Dr. Jesús Alberto Martínez Castro</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../alumnos/alumnos.html">Alumnos</a></li>
+                <li><a href="../investigacion/investigacion.html">Temas de investigación</a></li>
+                <li><a href="../interes/interes.html">Temas de interés</a></li>
+            </ul>
+        </nav>
+        <button id="menu-btn" onclick="toggleMenu()">Menú</button>
+    </header>
+
+    <div id="overlay" onclick="toggleMenu()"></div>
+    <button id="close-btn" onclick="toggleMenu()">X</button>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RhajOLNlfHg?autoplay=1&mute=1&controls=0" title="Observatorio HAWC" frameborder="0" allowfullscreen></iframe>
+    
+
+    <footer>
+        &copy; 2023 - Derechos reservados
+    </footer>
+
+    <script>
+        function mostrarInfo(card) {
+            card.querySelector('.card-inner').style.transform = 'rotateY(180deg)';
+        }
+
+        function ocultarInfo(card) {
+            card.querySelector('.card-inner').style.transform = '';
+        }
+
+        function toggleMenu() {
+            var nav = document.getElementById('nav');
+            var overlay = document.getElementById('overlay');
+            var closeBtn = document.getElementById('close-btn');
+            nav.classList.toggle('mostrar');
+            overlay.classList.toggle('mostrar');
+            closeBtn.classList.toggle('mostrar');
+        }
+    </script>
+</body>
+</html>

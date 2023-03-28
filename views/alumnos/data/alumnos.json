@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "nombre": "Alumno 1",
+    "imagen": "ruta-de-la-imagen-juan",
+    "trabajos": [
+      {
+        "id": 1,
+        "titulo": "Probabilidad y estadística",
+        "lugar": "CIC",
+        "fecha": "20/03/2023",
+        "archivo": "ruta-del-archivo-1"
+      },
+      {
+        "id": 2,
+        "titulo": "Cómputo cuántico",
+        "lugar": "CIC",
+        "fecha": "21/03/2023",
+        "archivo": "ruta-del-archivo-1"
+      },
+      {
+        "id": 3,
+        "titulo": "Machine Learning",
+        "lugar": "CIC",
+        "fecha": "21/03/2023",
+        "archivo": "ruta-del-archivo-1"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Alumno 2",
+    "imagen": "ruta-de-la-imagen-maria",
+    "trabajos": [
+        {
+            "id": 1,
+            "titulo": "Redes neuronales",
+            "lugar": "CIC",
+            "fecha": "22/03/2023",
+            "archivo": "ruta-del-archivo-1"
+        },
+        {
+          "id": 2,
+          "titulo": "Prueba",
+          "lugar": "CIC",
+          "fecha": "22/03/2023",
+          "archivo": "ruta-del-archivo-2"
+      }
+    ]
+  }
+]
